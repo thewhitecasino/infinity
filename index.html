@@ -117,12 +117,23 @@
     </div>
     <br style="clear: both;">
     <br>
-    <center style="background-color: #a041ff; width: 70%; margin-left: 5%; padding: 10%; margin-top: 100px; border-radius: 15px;">
-        <p style="color: white;">
+    <center id="testimonials" style="background-color: #a041ff; width: 70%; margin-left: 5%; padding: 10%; margin-top: 100px; border-radius: 15px;">
+        <span style="float: right; font-size: 5rem; color: white; cursor: pointer;" onclick="changeQuote()">></span>
+        <p style="color: white;" id="1">
             "Infinity has made it super simple for an international team to hire remote first developers. The staff is extremely friendly and their process is fast and simple. Their rates are the most affordable in the industry."
             <br>
             <br>
-            Shahrooz Chowdhury, CEO of Liven
+            Shahrooz Chowdhury, CEO of Liven</p>
+        <p style="color: white; display: none;" id="2">
+            "Infinity's rates are really solid and their customer service is super fast. Their attitude is very professional yet personal and their developers are exceptionally good at their work."
+            <br>
+            <br>
+            Alexander Olmstead, Co-Founder of SimplePayments</p>
+        <p style="color: white; display: none;" id="3">
+            "Each time we have asked Infinity for a developer we've had great candidates the next day. Writing an email to Infinity and a 20 minute meeting is all you need to get things going."
+            <br>
+            <br>
+            Johnson Matthey, CEO & Founder of Claim</p>
         </h2>
     </center>
     <br>
@@ -169,7 +180,7 @@
     </center>
     <br>
     <br>
-    <div style="background-color: rgb(0, 50, 50); color: white">
+    <div style="background-color: rgb(0, 50, 50); color: rgb(255, 255, 255)">
         <br>
         <a href="https://www.inadsglobal.com/corporate" style="text-decoration: none; color: white; margin-left: 5%"><strong>About Us</strong></a>
         <a href="https://www.inadsglobal.com/terms" style="text-decoration: none; color: white; margin-left: 5%"><strong>Terms of Use</strong></a>
@@ -182,5 +193,21 @@
         <div style="margin-left: 5%">© Infinity Group, Inc. 2022</div>
         <br>
     </div>
+    <script>
+        current_quote = 1;
+        function changeQuote(){
+            current_quote += 1
+            current = (current_quote % 3) + 1
+            all_quotes = ["1", "2", "3"]
+            colors = ["#23c273", "#a041ff", "#1a8297"]
+            for(i = 0; i < all_quotes.length; i++){
+                document.getElementById(all_quotes[i]).style.display = "none";
+                if(parseInt(all_quotes[i]) === current){
+                    document.getElementById("testimonials").style.backgroundColor = colors[i]
+                    document.getElementById(all_quotes[i]).style.display = "block"
+                }
+            }
+        }
+    </script>
 </body>
 </html>
