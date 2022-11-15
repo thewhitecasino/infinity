@@ -8,6 +8,7 @@
     <title>Infinity Corporation</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
         body{
             padding: 0;
             margin: 0;
@@ -41,7 +42,19 @@
         .intro-box{
             width: 75%;
         }
+        .mobile-divider{
+            display: none;
+        }
+        .bordered-infobox{
+            border: 1px solid white;
+        }
         @media screen and (max-width: 500px) {
+            .mobile-divider{
+                display: block;
+            }
+            .bordered-infobox{
+                border: none;
+            }
             img{
                 display: none;
             }
@@ -95,95 +108,51 @@
         <p style="margin-left: 12%; margin-bottom: 2%">We will handle the compliance, hiring, payroll and vetting, so you can scale faster.</p>
         <button class="start-button" onclick="document.location = 'https://calendly.com/infinity-omer/30min'">Start Now</button>
     </div>
-    <center style="margin-top: 10%; margin-bottom: 10%">
-        <h2 style="color: #05256a; font-size: 2rem; width: 75%;">Just tell us what you need, we handle the rest.</h2>
-        <p style="color: black; width: 75%;">Hiring global talent is hard, not with Infinity. Just describe your project to us and we will handle the rest. Starting from $20 per hour.</p>
-    </center>
-    <div style="margin: 5%">
-        <img src="/static/hiring.jpg" style="float: right; width: 400px;" alt="">
-        <span style="opacity: 0">Infinity Group, Inc.</span>
-        <div class="intro-box">
-            <h2 style="font-size: 2rem; margin-top: 10%">Grow your team globally.</h2>
-            <p style="color: black;" id="join-p">Join our network and scale your team globally within a week. Whenever you need a new team member instead of being bothered by the long and painful hiring process hire pre-vetted, senior developers.</p>
+    <center style="background: #222222">
+        <span style="opacity: 0;">Infinity</span>
+        <p>WHAT WE OFFER</p>
+        <br>
+        <br>
+        <div style="color: #49d395; font-family: 'Roboto';">
+            <span style="font-size: 2rem; border-radius: 15px; padding: 25px;" class="bordered-infobox">SOFTWARE ENGINEERING</span>
+            <br class="mobile-divider">
+            <br class="mobile-divider">
+            <br class="mobile-divider">
+            <br class="mobile-divider">
+            <span style="font-size: 2rem; margin-left: 50px; border-radius: 15px; padding: 25px;" class="bordered-infobox">STAFF AUGMENTATION</span>
         </div>
         <br>
-        <img src="/static/flow.jpg" style="float: left; width: 400px; margin-top: 250px;" alt="">
-        
-        <div id="pre-vetted" class="intro-box" style="float: right; margin-right: 5px; margin-top: -250px">
-            <h2 style="font-size: 2rem; float: right; margin-right: 110px; max-width: 400px;">Most economical choice for your company.</h2>
-            <br style="clear: both;">
-            <p style="color: black; float: right;">Hire pre-vetted, top quality senior developers starting from $20 per hour. A saving of up to 75%, save thousands of dollars in hiring fees, benefits and salary by joining our network.</p>
-        </div>
-    </div>
-    <br style="clear: both;">
-    <br>
-    <center id="testimonials" style="background-color: #a041ff; width: 70%; margin-left: 5%; padding: 10%; margin-top: 100px; border-radius: 15px;">
-        <span style="float: right; font-size: 5rem; color: white; cursor: pointer;" onclick="changeQuote()">></span>
-        <p style="color: white;" id="1">
-            "Infinity has made it super simple for an international team to hire remote first developers. The staff is extremely friendly and their process is fast and simple. Their rates are the most affordable in the industry."
-            <br>
-            <br>
-            Shahrooz Chowdhury, CEO of Liven</p>
-        <p style="color: white; display: none;" id="2">
-            "Infinity's rates are really solid and their customer service is super fast. Their attitude is very professional yet personal and their developers are exceptionally good at their work."
-            <br>
-            <br>
-            Alexander Olmstead, Co-Founder of SimplePayments</p>
-        <p style="color: white; display: none;" id="3">
-            "Each time we have asked Infinity for a developer we've had great candidates the next day. Writing an email to Infinity and a 20 minute meeting is all you need to get things going."
-            <br>
-            <br>
-            Johnson Matthey, CEO & Founder of Claim</p>
-        </h2>
+        <br>
+        <br>
+        <span style="opacity: 0;">Infinity</span>
     </center>
-    <br>
+    <h1 style="color: black; width: 85%;">
+        Our services are
+        ideal for: Companies of any size looking for top quality devs.
+    </h1>
     <br>
     <center>
-        <h2 style="font-size: 3rem;">Developers available to hire now</h2>
+        <p style="color: black; font-family: 'Roboto'; font-size: 2rem;">
+            Hire top quality senior devs around the world, within a few days.
+        </p>
         <br>
-        <div style="width: 80%; margin-left: 0; background-color: rgb(240, 240, 240); border-radius: 15px; padding: 25px;">
-            <img style="width: 100px; float: left; border-radius: 15px;" src="https://media-exp1.licdn.com/dms/image/C4D03AQFwtvaibSZj4w/profile-displayphoto-shrink_800_800/0/1636359236361?e=1673481600&v=beta&t=1ceZl83QaiRvDGLJl6NE7PFAb8prMh6Tk-LqLt28CT4" alt="">
-            <br style="clear: both;">
-                <h2 style="text-align: left;">Serdar Köksal</h2>
-                <p style="text-align: left; width: 90%; clear: both; margin-left: -10%; color: black;">Serdar is an experienced fullstack developer with main expertise in Java. Overall he has almost ten years of background in the IT sector working with various languages, but the last eight years were devoted to Java-based frameworks. Currently, he works in the telecom sphere.</p>
-            
-        </div>
-        <br>
-        <div style="width: 80%; margin-left: 0; background-color: rgb(240, 240, 240); border-radius: 15px; padding: 25px;">
-            <img style="width: 100px; float: left; border-radius: 15px;" src="https://media-exp1.licdn.com/dms/image/C5603AQE-02I3fPXqjg/profile-displayphoto-shrink_800_800/0/1535476387538?e=1673481600&v=beta&t=90v1dbxmt0v3OdImDRdloKvXU48ppxBTq0nwMqdClY8" alt="">
-            <br style="clear: both;">
-                <h2 style="text-align: left;">Göktuğ Korkmaz</h2>
-                <p style="text-align: left; width: 90%; clear: both; margin-left: -10%; color: black">Göktuğ is an experienced AI engineer with seven years of commercial background in automation and id verification, e-payments, and banking projects using different frameworks.</p>            
-        </div>
-        <br>
-        <div style="width: 80%; margin-left: 0; background-color: rgb(240, 240, 240); border-radius: 15px; padding: 25px;">
-            <img style="width: 100px; float: left; border-radius: 15px;" src="https://media-exp1.licdn.com/dms/image/C5603AQGirW7n7BihPg/profile-displayphoto-shrink_800_800/0/1637503563802?e=1673481600&v=beta&t=JzOO2B82VGz2guhPpIz74s8tPhc19KYLWKL_45BCxtA" alt="">
-            <br style="clear: both;">
-                <h2 style="text-align: left;">Semih Doğan</h2>
-                <p style="text-align: left; width: 90%; clear: both; margin-left: -10%; color: black">Saeed is a strong backend designer with a 14-year of hands-on experience, creating many enterprise design systems for million-user applications.
-                    He has a five-year of experience leading large projects and small-to-medium-sized teams, which helped him develop advanced organizational and communication skills.</p>            
-        </div><br><br>
-        <h2>Contact Us For 1000+ More Developers...</h2>
-        <a href="mailto:contact@infinitysoft.app" style="color: blue; text-decoration: none;">contact@infinitysoft.app</a>
+        <img src="https://firebasestorage.googleapis.com/v0/b/file-store-6094b.appspot.com/o/files%2F22695?alt=media&token=709b6728-023d-4c7e-b118-d459bc2794c3" alt="">
     </center>
-    <br>
-    <div style="background-color: rgb(120, 120, 240); width: 70%; margin-left: 5%; padding: 10%; margin-top: 50px; border-radius: 15px">
-        <h1 style="font-size: 2rem; margin: 0;">Find long term team members</h1>
-        <p style="font-size: 1rem; width: 80%;">We are focused on finding you team members. Customer satisfaction is above all else and our priority is to form long term business relationships with our clients.</p>
-    </div>
-    <br>
-    <br>
-    <center>
-        <h1 style="font-size: 3rem; margin: 0; color: black;">Start Now!</h1>
-        <br>
-        <button class="btn btn-primary"  onclick="document.location = 'mailto:contact@infinitysoft.app'">Contact Us</button>
+    <center style="background: #222222">
+        <span style="opacity: 0;">Infinity</span>
+        <h3 style="color: white; font-size: 3rem; width: 90%;">
+            Schedule a free 30-minute 
+            <br>
+            consultation now.    
+            <br>
+            <button class="start-button" style="margin-left: 0;" onclick="document.location = 'https://calendly.com/infinity-omer/30min'">SCHEDULE MY CALL</button>
+        </h3>
+        <span style="opacity: 0;">Infinity</span>
     </center>
-    <br>
-    <br>
     <div style="background-color: rgb(0, 50, 50); color: rgb(255, 255, 255)">
         <br>
-        <a href="https://www.inadsglobal.com/corporate" style="text-decoration: none; color: white; margin-left: 5%"><strong>About Us</strong></a>
-        <a href="https://www.inadsglobal.com/terms" style="text-decoration: none; color: white; margin-left: 5%"><strong>Terms of Use</strong></a>
+        <a href="mailto:contact@infinitysoft.app" style="text-decoration: none; color: white; margin-left: 5%"><strong>Contact</strong></a>
+        <a href="https://calendly.com/infinity-omer/30min" style="text-decoration: none; color: white; margin-left: 5%"><strong>Schedule A Call</strong></a>
         <br>
         <img src="https://firebasestorage.googleapis.com/v0/b/file-store-6094b.appspot.com/o/files%2F22695?alt=media&amp;token=709b6728-023d-4c7e-b118-d459bc2794c3" style="float: right; margin-right: 4%;">
         <hr style="margin-top: 3%; margin-right: 50%; margin-left: 5%">
@@ -193,21 +162,5 @@
         <div style="margin-left: 5%">© Infinity Group, Inc. 2022</div>
         <br>
     </div>
-    <script>
-        current_quote = 1;
-        function changeQuote(){
-            current_quote += 1
-            current = (current_quote % 3) + 1
-            all_quotes = ["1", "2", "3"]
-            colors = ["#23c273", "#a041ff", "#1a8297"]
-            for(i = 0; i < all_quotes.length; i++){
-                document.getElementById(all_quotes[i]).style.display = "none";
-                if(parseInt(all_quotes[i]) === current){
-                    document.getElementById("testimonials").style.backgroundColor = colors[i]
-                    document.getElementById(all_quotes[i]).style.display = "block"
-                }
-            }
-        }
-    </script>
 </body>
 </html>
