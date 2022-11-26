@@ -96,6 +96,15 @@
             background-color: gray;
             color: white;
         }
+        .services-div{
+            background-image: url('/static/globe_nw.png'); background-size: 100vw;
+        }
+        @media screen and (max-width: 500px) {
+            .services-div{
+                background-image: none;
+            }
+        }
+        
     </style>
 </head>
 <body>
@@ -127,8 +136,7 @@
         </div>
         
     </center>
-    <div style="background-image: url('/static/globe_nw.png'); background-size: 100vw;">
-        
+    <div id="services-div">
         <span style="opacity: 0;">Infinity</span>
         <h1 style="color: black; width: 85%;">
             Our services are
